@@ -62,7 +62,8 @@ L.Control.SideBySide = L.Control.extend({
   getPosition: function () {
     var rangeValue = this._range.value
     var offset = (0.5 - rangeValue) * (2 * this.options.padding + this.options.thumbSize)
-    return this._map.getSize().x * rangeValue + offset
+    var position = document.getElementsByClassName('vue2leaflet-map')[0].offsetWidth * rangeValue + offset;
+    return position;
   },
 
   setPosition: noop,
