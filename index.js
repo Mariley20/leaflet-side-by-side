@@ -191,8 +191,8 @@ L.Control.SideBySide = L.Control.extend({
   }
 })
 
-L.control.sideBySide = function (leftLayers, rightLayers, options) {
+SideBySide = function (leftLayers, rightLayers, options) {
   return new L.Control.SideBySide(leftLayers, rightLayers, options)
 }
 
-module.exports = L.Control.SideBySide
+module.exports = SideBySide
